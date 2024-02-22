@@ -10,7 +10,7 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="flex justify-between items-center p-10">
+    <header className="flex justify-between items-center pt-10 pb-10 pl-5 pr-5">
       <a href="/">
         <Image src={logo} alt="Logo" />
       </a>
@@ -58,7 +58,7 @@ export default function Header() {
         {/* Mobile menu */}
         {isOpen && (
           <div
-            className="md:hidden absolute top-[100px] left-0 right-0 bg-[#191919] z-50 shadow-2xl pb-6 rounded-b-lg rounded-t-none"
+            className="md:hidden absolute top-[100px] left-0 right-0 bg-[#191919] z-50 shadow-2xl rounded-b-lg rounded-t-none"
             style={{
               borderRadius: "50px",
               backgroundColor: "#363636",
