@@ -10,14 +10,14 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="w-[100%] h-[100px] flex justify-between items-center p-10">
+    <header className="flex justify-between items-center p-10">
       <a href="/">
         <Image src={logo} alt="Logo" />
       </a>
 
       <div className="flex gap-20">
         {/* Menu for desktop (md and larger) */}
-        <div className="hidden md:flex text-neutral-400 text-xl font-medium font-['DM Sans'] leading-relaxed gap-5">
+        <div className="hidden md:flex text-neutral-400 text-xl font-medium font-['DM Sans'] leading-relaxed gap-6">
           <ActiveLink title="Home" href={"/"} />
           <ActiveLink title="About" href={"/#about"} />
           <ActiveLink title="Tech Stack" href={"/#tech-stack"} />
@@ -30,7 +30,7 @@ export default function Header() {
             <Image
               src={ghIcon}
               alt="GitHub"
-              className="hover:scale-110 hover:animate-pulse"
+              className="rounded-full hover:scale-110 hover:animate-pulse"
             />
           </a>
           <a
@@ -40,7 +40,7 @@ export default function Header() {
             <Image
               src={linkedinIcon}
               alt="LinkedIn"
-              className="hover:scale-110 hover:animate-pulse"
+              className="rounded-full hover:scale-110 hover:animate-pulse"
             />
           </a>
         </div>
