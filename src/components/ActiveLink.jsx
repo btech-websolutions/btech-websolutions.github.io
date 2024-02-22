@@ -19,7 +19,7 @@ const ActiveLink = ({ href, title }) => {
       <a
         href={href}
         onClick={handleClick}
-        className={`text-text-neutral-400 ${isActive ? "text-neutral-200" : "text-neutral-600"} hover:text-neutral-200`}
+        className={`md:text-text-neutral-400 ${isActive ? "md:text-neutral-200" : "md:text-neutral-600"} md:hover:text-neutral-200`}
       >
         {title}
       </a>

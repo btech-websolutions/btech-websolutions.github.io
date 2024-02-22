@@ -5,6 +5,7 @@ import linkedinIcon from "../../public/assets/header/linkedinIcon.svg";
 import menuIcon from "../../public/assets/header/menuIcon.svg";
 import logo from "../../public/assets/header/logo.svg";
 import ActiveLink from "./ActiveLink";
+import MobileMenu from "./MobileMenu";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -56,23 +57,7 @@ export default function Header() {
         </div>
 
         {/* Mobile menu */}
-        {isOpen && (
-          <div
-            className="md:hidden absolute top-[100px] left-0 right-0 bg-[#191919] z-50 shadow-2xl rounded-b-lg rounded-t-none"
-            style={{
-              borderRadius: "50px",
-              backgroundColor: "#363636",
-            }}
-          >
-            <div className="flex flex-col items-center py-4 text-3xl gap-8">
-              <ActiveLink title="Home" href={"/"} />
-              <ActiveLink title="About" href={"/#about"} />
-              <ActiveLink title="Tech Stack" href={"/#tech-stack"} />
-              <ActiveLink title="Projects" href={"/#projects"} />
-              <ActiveLink title="Contact" href={"/contact"} />
-            </div>
-          </div>
-        )}
+        {isOpen && <MobileMenu setIsOpen={setIsOpen} />}
       </div>
     </header>
   );
