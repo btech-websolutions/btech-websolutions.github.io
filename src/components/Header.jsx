@@ -28,21 +28,13 @@ export default function Header() {
         {/* Social icons */}
         <div className="hidden md:flex justify-between items-center gap-5 ml-auto">
           <a href="https://github.com/BTech-Web-Solutions" target="_blank">
-            <Image
-              src={ghIcon}
-              alt="GitHub"
-              className="rounded-full hover:scale-110 hover:animate-pulse"
-            />
+            <Image src={ghIcon} alt="GitHub" className="social-icon" />
           </a>
           <a
             href="https://www.linkedin.com/company/btech-web-solutions/"
             target="_blank"
           >
-            <Image
-              src={linkedinIcon}
-              alt="LinkedIn"
-              className="rounded-full hover:scale-110 hover:animate-pulse"
-            />
+            <Image src={linkedinIcon} alt="LinkedIn" className="social-icon" />
           </a>
         </div>
 
