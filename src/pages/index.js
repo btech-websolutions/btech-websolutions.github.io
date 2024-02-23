@@ -12,6 +12,7 @@ export default function Home() {
           We build things for web
         </h1>
 
+        {/* Profile Image */}
         <div className="flex justify-center ">
           <img
             src={profilePhoto.src}
