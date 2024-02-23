@@ -11,14 +11,3 @@ body {
   background-clip: text;
   color: transparent;
 }
-
-.profile-photo {
-  width: 200px;
-  height: 200px;
-  position: relative;
-  overflow: hidden;
-  border-radius: 50%;
-  margin: 0 auto;
-  display: block;
-  object-fit: cover;
-}

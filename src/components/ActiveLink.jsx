@@ -16,6 +16,30 @@ const ActiveLink = ({ href, title }) => {
 
   return (
     <div>
+      <style jsx>{`
+        a {
+          position: relative;
+          text-decoration: none;
+          color: inherit;
+        }
+        a::before {
+          content: "";
+          position: absolute;
+          width: 0%;
+          height: 2px;
+          bottom: 0;
+          left: 50%;
+          background-color: currentColor;
+          transition:
+            width 0.3s ease-in-out,
+            left 0.3s ease-in-out;
+          transform: translateX(-50%);
+        }
+        a:hover::before {
+          width: 100%;
+          left: 1;
+        }
+      `}</style>
       <a
         href={href}
         onClick={handleClick}
