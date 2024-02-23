@@ -12,7 +12,7 @@ module.exports = {
         dark: {
           solidHeading: "#CCCCCC",
           p: "#A7A7A7",
-          bg: "#ffffff",
+          bg: "#191919",
           icons: "#A7A7A7",
           gradient: "gradient-light-dark",
         },

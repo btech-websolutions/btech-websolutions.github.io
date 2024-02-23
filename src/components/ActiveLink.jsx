@@ -26,7 +26,7 @@ const ActiveLink = ({ href, title }) => {
         a::before {
           content: "";
           position: absolute;
-          width: 0%;
+          width: ${isActive ? "100%" : "0"};
           height: 2px;
           bottom: 0;
           left: 50%;
