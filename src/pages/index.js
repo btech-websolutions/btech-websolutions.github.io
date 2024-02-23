@@ -50,7 +50,7 @@ export default function Home() {
           </p>
 
           <div className="flex justify-center">
-            <div className="tech-stack__icons gap-10 grid grid-cols-2 justify-center items-center">
+            <div className="tech-stack__icons gap-10 grid grid-cols-2 justify-center items-center lg:grid lg:grid-cols-6">
               <Image src={htmlIcon} alt="HTML" />
               <Image src={cssIcon} alt="CSS" />
               <Image src={jsIcon} alt="JavaScript" />
