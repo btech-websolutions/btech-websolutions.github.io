@@ -49,7 +49,7 @@ export default function Home() {
             Technologies we’ve been working with recently
           </p>
 
-          <div className="flex justify-center gap-14 flex-wrap tech-stack__icons pl-5 pr-5">
+          <div className="flex justify-center gap-14 flex-wrap tech-stack__icons pl-5 pr-5 md:pl-48 md:pr-48">
             <Image src={htmlIcon} alt="HTML" />
             <Image src={cssIcon} alt="CSS" />
             <Image src={jsIcon} alt="JavaScript" />
