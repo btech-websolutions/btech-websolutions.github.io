@@ -20,7 +20,15 @@ body {
 }
 
 @media screen and (min-width: 1200px) {
+  .tech-stack__icons img {
+    transition: transform 0.5s;
+  }
+
   .tech-stack__icons img:hover {
     transform: scale(1.1);
+  }
+
+  .tech-stack__icons img:not(:hover) {
+    transform: scale(1);
   }
 }
