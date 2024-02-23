@@ -20,7 +20,6 @@ const ActiveLink = ({ href, title }) => {
         a {
           position: relative;
           text-decoration: none;
-          color: inherit;
         }
 
         a::before {
@@ -45,7 +44,7 @@ const ActiveLink = ({ href, title }) => {
       <a
         href={href}
         onClick={handleClick}
-        className={`md:text-text-neutral-400 ${isActive ? "md:text-neutral-200" : "md:text-neutral-600"} md:hover:text-neutral-200`}
+        className={`text-neutral-100 ${isActive ? "md:text-light-solidHeading" : "md:text-light-solidHeading"} md:hover:text-light-p`}
       >
         {title}
       </a>
