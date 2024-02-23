@@ -18,3 +18,7 @@ body {
   margin-left: 20px;
   margin-right: 20px;
 }
+
+.tech-stack__icons img:hover {
+  transform: scale(1.1);
+}

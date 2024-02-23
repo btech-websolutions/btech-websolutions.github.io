@@ -21,7 +21,7 @@ export default function Home() {
       <div className=" justify-between items-center md:p-10">
         {/* Presentation Section */}
         <section className="mb-20 md:flex justify-between items-center">
-          <h1 className="text-dark-solidHeading text-[28px] font-bold font-['Poppins'] pl-5 pr-5 mb-4 leading-9">
+          <h1 className="text-dark-solidHeading text-[28px] font-bold font-['Poppins'] pl-5 pr-5 mb-4 leading-9 lg:text-[48px] lg:leading-tight">
             Hi 👋, <br /> We are <br />
             <span className="text-gradient">BTech - Web Solutions</span> <br />
             We build things for web
