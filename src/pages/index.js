@@ -40,7 +40,7 @@ export default function Home() {
         </section>
 
         {/* Tech Stach Section */}
-        <section>
+        <section className="mb-20 md:flex justify-between items-center">
           <h1 className="text-dark-solidHeading text-3xl font-bold font-['Poppins'] leading-tight pl-5 pr-5 mb-2 text-center">
             Our Tech Stack
           </h1>
@@ -65,6 +65,17 @@ export default function Home() {
               <Image src={gitIcon} alt="Git" />
             </div>
           </div>
+        </section>
+
+        {/* Projects Section */}
+        <section className="mb-20 md:flex justify-between items-center">
+          <h1 className="text-dark-solidHeading text-3xl font-bold font-['Poppins'] leading-tight pl-5 pr-5 mb-2 text-center">
+            Projects
+          </h1>
+
+          <p className="text-dark-solidHeading text-xl font-normal font-['Poppins'] leading-tight pl-10 pr-10 mb-10 text-center">
+            Things we’ve built so far
+          </p>
         </section>
       </div>
     </main>
