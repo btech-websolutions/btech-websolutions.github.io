@@ -22,6 +22,7 @@ const ActiveLink = ({ href, title }) => {
           text-decoration: none;
           color: inherit;
         }
+
         a::before {
           content: "";
           position: absolute;
@@ -35,6 +36,7 @@ const ActiveLink = ({ href, title }) => {
             left 0.3s ease-in-out;
           transform: translateX(-50%);
         }
+
         a:hover::before {
           width: 100%;
           left: 1;
