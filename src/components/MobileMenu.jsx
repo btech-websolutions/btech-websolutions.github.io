@@ -7,7 +7,7 @@ import ThemeBtn from "./ThemeBtn";
 
 const MobileMenu = ({ setIsOpen }) => {
   return (
-    <div className="md:hidden fixed top-[30px] left-2 right-2 bg-[#363636] rounded-[15px] pl-5 font-['dm sans'] font-medium text-[#CCCCCC] z-20">
+    <div className="md:hidden fixed top-[18px] left-2 right-2 bg-[#363636] rounded-[15px] pl-5 font-['dm sans'] font-medium text-[#CCCCCC] z-20">
       <div className="flex justify-between items-center py-4 pr-5">
         <Image src={logo} alt="Logo" />
 
