@@ -6,6 +6,12 @@ body {
   background-color: #191919;
 }
 
+.text-gradient {
+  background-image: linear-gradient(to right, #13b0f5, #e70faa);
+  background-clip: text;
+  color: transparent;
+}
+
 .tech-stack__icons img {
   width: 80px;
   height: 80px;
