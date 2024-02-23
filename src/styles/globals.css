@@ -15,4 +15,6 @@ body {
 .tech-stack__icons img {
   width: 80px;
   height: 80px;
+  margin-left: 20px;
+  margin-right: 20px;
 }

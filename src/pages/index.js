@@ -49,19 +49,21 @@ export default function Home() {
             Technologies we’ve been working with recently
           </p>
 
-          <div className="flex justify-center gap-14 flex-wrap tech-stack__icons pl-5 pr-5 md:pl-48 md:pr-48">
-            <Image src={htmlIcon} alt="HTML" />
-            <Image src={cssIcon} alt="CSS" />
-            <Image src={jsIcon} alt="JavaScript" />
-            <Image src={reactIcon} alt="React" />
-            <Image src={nextjsIcon} alt="Next.js" />
-            <Image src={reduxIcon} alt="Redux" />
-            <Image src={sassIcon} alt="Sass" />
-            <Image src={tailwindIcon} alt="Tailwind" />
-            <Image src={bootstrapIcon} alt="Bootstrap" />
-            <Image src={vscodeIcon} alt="VSCode" />
-            <Image src={githubIcon} alt="GitHub" />
-            <Image src={gitIcon} alt="Git" />
+          <div className="flex justify-center">
+            <div className="tech-stack__icons gap-10 grid grid-cols-2 justify-center items-center">
+              <Image src={htmlIcon} alt="HTML" />
+              <Image src={cssIcon} alt="CSS" />
+              <Image src={jsIcon} alt="JavaScript" />
+              <Image src={reactIcon} alt="React" />
+              <Image src={nextjsIcon} alt="Next.js" />
+              <Image src={reduxIcon} alt="Redux" />
+              <Image src={sassIcon} alt="Sass" />
+              <Image src={tailwindIcon} alt="Tailwind" />
+              <Image src={bootstrapIcon} alt="Bootstrap" />
+              <Image src={vscodeIcon} alt="VSCode" />
+              <Image src={githubIcon} alt="GitHub" />
+              <Image src={gitIcon} alt="Git" />
+            </div>
           </div>
         </section>
       </div>
