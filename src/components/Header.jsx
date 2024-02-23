@@ -13,7 +13,7 @@ export default function Header() {
   return (
     <header className="flex justify-between items-center pt-5 pb-5 pl-5 pr-5 sticky top-[-1px] bg-dark-bg z-20 mb-10 shadow-lg">
       <a href="/">
-        <Image src={logo} alt="Logo" />
+        <Image src={logo} alt="Logo" className="h-10 w-20 " />
       </a>
 
       <div className="flex gap-20">
@@ -26,7 +26,7 @@ export default function Header() {
           <ActiveLink title="Contact" href={"/contact"} />
         </div>
         {/* Social icons */}
-        <div className="hidden md:flex justify-between items-center gap-5 ml-auto">
+        <div className="flex md:flex justify-between items-center gap-5 ml-auto">
           <a href="https://github.com/BTech-Web-Solutions" target="_blank">
             <Image src={ghIcon} alt="GitHub" className="social-icon" />
           </a>
