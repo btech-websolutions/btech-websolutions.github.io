@@ -44,7 +44,7 @@ const ActiveLink = ({ href, title }) => {
       <a
         href={href}
         onClick={handleClick}
-        className={`text-neutral-100 ${isActive ? "md:text-light-solidHeading" : "md:text-light-solidHeading"} md:hover:text-light-p`}
+        className={`text-neutral-100 ${isActive ? "md:text-dark-solidHeading" : "md:text-dark-solidHeading"} md:hover:text-dark-p`}
       >
         {title}
       </a>

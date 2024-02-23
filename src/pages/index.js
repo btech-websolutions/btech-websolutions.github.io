@@ -1,7 +1,6 @@
 import Image from "next/image";
-import Header from "../components/Header";
-import profilePhoto from "../../public/assets/header/profilePhoto.png";
 
+import profilePhoto from "../../public/assets/header/profilePhoto.png";
 import bootstrapIcon from "../../public/assets/bootstrapIcon.svg";
 import cssIcon from "../../public/assets/cssIcon.svg";
 import githubIcon from "../../public/assets/githubIcon.svg";
@@ -21,7 +20,7 @@ export default function Home() {
       <div className=" justify-between items-center md:p-10">
         {/* Presentation Section */}
         <section className="mb-20 md:flex justify-between items-center">
-          <h1 className="text-light-solidHeading text-[28px] font-bold font-['Poppins'] pl-5 pr-5 mb-4 leading-9 lg:text-[48px] lg:leading-tight">
+          <h1 className="text-dark-solidHeading text-[28px] font-bold font-['Poppins'] pl-5 pr-5 mb-4 leading-9 lg:text-[48px] lg:leading-tight">
             Hi 👋, <br /> We are <br />
             <span className="text-gradient">BTech - Web Solutions</span> <br />
             We build things for web
@@ -41,11 +40,11 @@ export default function Home() {
 
         {/* Tech Stach Section */}
         <section className="flex flex-col mb-20 md:flex justify-between items-center">
-          <h1 className="text-light-solidHeading text-3xl font-bold font-['Poppins'] leading-tight pl-5 pr-5 mb-2 text-center">
+          <h1 className="text-dark-solidHeading text-3xl font-bold font-['Poppins'] leading-tight pl-5 pr-5 mb-2 text-center">
             Our Tech Stack
           </h1>
 
-          <p className="text-light-p text-xl font-normal font-['Poppins'] leading-tight pl-10 pr-10 mb-10 text-center">
+          <p className="text-dark-p text-xl font-normal font-['Poppins'] leading-tight pl-10 pr-10 mb-10 text-center">
             Technologies we’ve been working with recently
           </p>
 
@@ -69,11 +68,11 @@ export default function Home() {
 
         {/* Projects Section */}
         <section className="flex flex-col mb-20 md:flex justify-between items-center">
-          <h1 className="text-light-solidHeading text-3xl font-bold font-['Poppins'] leading-tight pl-5 pr-5 mb-2 text-center">
+          <h1 className="text-dark-solidHeading text-3xl font-bold font-['Poppins'] leading-tight pl-5 pr-5 mb-2 text-center">
             Projects
           </h1>
 
-          <p className="text-light-p text-xl font-normal font-['Poppins'] leading-tight pl-10 pr-10 mb-10 text-center">
+          <p className="text-dark-p text-xl font-normal font-['Poppins'] leading-tight pl-10 pr-10 mb-10 text-center">
             Things we’ve built so far
           </p>
         </section>

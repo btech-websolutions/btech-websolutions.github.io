@@ -20,7 +20,7 @@ const ThemeBtn = () => {
 
       <div className="w-12 h-6 relative">
         <div
-          className={`w-12 h-6 left-0 top-0 absolute bg-light-solidHeading rounded-3xl shadow-inner ${isDarkMode ? "opacity-100" : "opacity-100"}`}
+          className={`w-12 h-6 left-0 top-0 absolute bg-dark-solidHeading rounded-3xl shadow-inner ${isDarkMode ? "opacity-100" : "opacity-100"}`}
           style={{ transition: "opacity 0.3s" }}
         />
         <div
