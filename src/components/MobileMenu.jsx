@@ -3,6 +3,7 @@ import ActiveLink from "./ActiveLink";
 import closeBtn from "../../public/assets/header/closeBtn.svg";
 import Image from "next/image";
 import logo from "../../public/assets/header/logo.svg";
+import ThemeBtn from "./ThemeBtn";
 
 const MobileMenu = ({ setIsOpen }) => {
   return (
@@ -18,12 +19,17 @@ const MobileMenu = ({ setIsOpen }) => {
         />
       </div>
 
-      <div className="flex flex-col py-4 text-3xl gap-8">
+      <div className="flex-col text-xl font-medium font-['DM Sans'] leading-10 pb-10">
         <ActiveLink title="Home" href={"/"} />
         <ActiveLink title="About" href={"/#about"} />
         <ActiveLink title="Tech Stack" href={"/#tech-stack"} />
         <ActiveLink title="Projects" href={"/#projects"} />
         <ActiveLink title="Contact" href={"/contact"} />
+
+        <div className="flex justify-between pr-8 items-center">
+          <span className="text-neutral-200">Theme: Dark</span>
+          <ThemeBtn />
+        </div>
       </div>
     </div>
   );
