@@ -1,11 +1,11 @@
 import "@/styles/globals.css";
-
-import AppProvider from "@/contexts/appProvider";
+import Header from "@/components/Header";
 
 export default function App({ Component, pageProps }) {
   return (
-    <AppProvider>
+    <div className="container mx-auto bg-dark-bg">
+      <Header />
       <Component {...pageProps} />
-    </AppProvider>
+    </div>
   );
 }

@@ -2,12 +2,12 @@ import { Html, Head, Main, NextScript } from "next/document";
 
 export default function Document() {
   return (
-    <Html lang="pt-br">
+    <Html lang="en">
       <Head>
         <link href="https://fonts.cdnfonts.com/css/dm-sans" rel="stylesheet" />
         <link href="https://fonts.cdnfonts.com/css/poppins" rel="stylesheet" />
       </Head>
-      <body>
+      <body className="bg-dark-bg">
         <Main />
         <NextScript />
       </body>
