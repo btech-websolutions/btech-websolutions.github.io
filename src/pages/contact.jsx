@@ -3,11 +3,12 @@ import Header from "../components/Header";
 
 const contact = () => {
   return (
-    <div>
+    <main>
+      <Header />
       <h1 className="text-neutral-400 text-4xl font-bold font-['DM Sans'] leading-relaxed">
         Contact
       </h1>
-    </div>
+    </main>
   );
 };
 

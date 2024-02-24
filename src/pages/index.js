@@ -1,5 +1,5 @@
 import Image from "next/image";
-
+import Header from "@/components/Header";
 import profilePhoto from "../../public/assets/header/profilePhoto.png";
 import bootstrapIcon from "../../public/assets/bootstrapIcon.svg";
 import cssIcon from "../../public/assets/cssIcon.svg";
@@ -17,6 +17,7 @@ import vscodeIcon from "../../public/assets/vscodeIcon.svg";
 export default function Home() {
   return (
     <main className="max-w-[1600px] mx-auto">
+      <Header />
       <div className=" justify-between items-center md:p-10">
         {/* Presentation Section */}
         <section className="mb-20 md:flex justify-between items-center">
