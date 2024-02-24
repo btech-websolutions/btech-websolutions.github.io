@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
 import Image from "next/image";
 import ghIcon from "../../public/assets/header/ghIcon.svg";
 import linkedinIcon from "../../public/assets/header/linkedinIcon.svg";
@@ -6,12 +6,17 @@ import menuIcon from "../../public/assets/header/menuIcon.svg";
 import logo from "../../public/assets/header/logo.svg";
 import ActiveLink from "./ActiveLink";
 import MobileMenu from "./MobileMenu";
+import AppContext from "../contexts/appContext";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
+  const { theme } = useContext(AppContext);
+
   return (
-    <header className="flex justify-between items-center pt-5 pb-5 pl-5 pr-5 sticky top-[-1px] bg-dark-bg z-20 mb-10 shadow-lg">
+    <header
+      className={`flex justify-between items-center pt-5 pb-5 pl-5 pr-5 sticky top-[-1px] bg-${theme}-bg z-20 mb-10 shadow-lg`}
+    >
       <a href="/">
         <Image src={logo} alt="Logo" className="h-10 w-20 " />
       </a>

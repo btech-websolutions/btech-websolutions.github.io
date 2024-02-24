@@ -1,13 +1,17 @@
-import React from "react";
+import React, { useContext } from "react";
 import ActiveLink from "./ActiveLink";
 import closeBtn from "../../public/assets/header/closeBtn.svg";
 import Image from "next/image";
 import logo from "../../public/assets/header/logo.svg";
 import ThemeBtn from "./ThemeBtn";
+import AppContext from "../contexts/appContext";
 
 const MobileMenu = ({ setIsOpen }) => {
+  const { theme, setTheme } = useContext(AppContext);
   return (
-    <div className="md:hidden fixed top-[18px] left-2 right-2 bg-dark-menubg rounded-[15px] pl-5 font-['dm sans'] font-medium text-dark-menutext z-20">
+    <div
+      className={`md:hidden fixed top-[18px] left-2 right-2 bg-${theme}-menubg rounded-[15px] pl-5 font-['dm sans'] font-medium text-${theme}-menutext z-20`}
+    >
       <div className="flex justify-between items-center py-4 pr-5">
         <Image src={logo} alt="Logo" />
 
@@ -27,7 +31,7 @@ const MobileMenu = ({ setIsOpen }) => {
         <ActiveLink title="Contact" href={"/contact"} />
 
         <div className="flex justify-between pr-8 items-center">
-          <span className="text-neutral-200">Theme: Dark</span>
+          <span className="text-neutral-200">Theme: {theme}</span>
           <ThemeBtn />
         </div>
       </div>

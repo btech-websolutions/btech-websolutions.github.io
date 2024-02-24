@@ -1,9 +1,12 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import { useRouter } from "next/router";
+import AppContext from "../contexts/appContext";
 
 const ActiveLink = ({ href, title }) => {
   const router = useRouter();
   const [isActive, setIsActive] = useState(false);
+
+  const { theme } = useContext(AppContext);
 
   const handleClick = (e) => {
     e.preventDefault();
@@ -44,7 +47,7 @@ const ActiveLink = ({ href, title }) => {
       <a
         href={href}
         onClick={handleClick}
-        className={`text-neutral-100 ${isActive ? "md:text-dark-solidHeading" : "md:text-dark-solidHeading"} md:hover:text-dark-p`}
+        className={`text-neutral-100 ${isActive ? `md:text-${theme}-solidHeading` : `md:text-${theme}-solidHeading`} md:hover:text-${theme}-p`}
       >
         {title}
       </a>
