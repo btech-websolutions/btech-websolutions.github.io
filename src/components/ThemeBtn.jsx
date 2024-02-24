@@ -1,5 +1,5 @@
 import React, { useState, useContext } from "react";
-import AppContext from "@/contexts/appContext";
+import AppContext from "@/contexts/AppContext";
 import sunIcon from "../../public/assets/header/sunIcon.svg";
 import moonIcon from "../../public/assets/header/moonIcon.svg";
 import Image from "next/image";
@@ -21,7 +21,7 @@ const ThemeBtn = () => {
 
       <div className="w-12 h-6 relative">
         <div
-          className={`w-12 h-6 left-0 top-0 absolute bg-dark-solidHeading rounded-3xl shadow-inner ${theme === "dark" ? "opacity-100" : "opacity-100"}`}
+          className={`w-12 h-6 left-0 top-0 absolute bg-${theme}-solidHeading rounded-3xl shadow-inner ${theme === "dark" ? "opacity-100" : "opacity-100"}`}
           style={{ transition: "opacity 0.3s" }}
         />
         <div

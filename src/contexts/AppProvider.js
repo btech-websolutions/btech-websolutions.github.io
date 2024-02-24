@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import AppContext from "./appContext";
+import AppContext from "./AppContext";
 
 function AppProvider({ children }) {
-  const [theme, setTheme] = useState("dark");
+  const [theme, setTheme] = useState("lightTheme");
 
   const contextValue = {
     theme,

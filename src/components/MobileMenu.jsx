@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import AppContext from "@/contexts/appContext";
+import AppContext from "@/contexts/AppContext";
 import ActiveLink from "./ActiveLink";
 import closeBtn from "../../public/assets/header/closeBtn.svg";
 import Image from "next/image";
