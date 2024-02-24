@@ -1,12 +1,5 @@
-import "@/styles/globals.css";
-import AppProvider from "@/contexts/AppProvider";
+import '@/styles/globals.css'
 
 export default function App({ Component, pageProps }) {
-  return (
-    <div className="container mx-auto">
-      <AppProvider>
-        <Component {...pageProps} />
-      </AppProvider>
-    </div>
-  );
+  return <Component {...pageProps} />
 }
