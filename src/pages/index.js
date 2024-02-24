@@ -17,7 +17,6 @@ import vscodeIcon from "../../public/assets/vscodeIcon.svg";
 import { useState } from "react";
 
 export default function Home() {
-  const [isrDark, setIsDark] = useState(true);
   return (
     <div className="justify-between items-center md:p-10 bg-light-bg dark:bg-dark-bg">
       {/* Presentation Section */}
