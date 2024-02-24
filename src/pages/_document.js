@@ -7,7 +7,7 @@ export default function Document() {
         <link href="https://fonts.cdnfonts.com/css/dm-sans" rel="stylesheet" />
         <link href="https://fonts.cdnfonts.com/css/poppins" rel="stylesheet" />
       </Head>
-      <body className="bg-dark-bg">
+      <body>
         <Main />
         <NextScript />
       </body>
