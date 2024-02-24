@@ -77,7 +77,7 @@ export default function Home() {
         </section>
 
         {/* Projects Section */}
-        <section className="flex flex-col mb-20 md:flex justify-between items-center">
+        <section className="flex flex-col pb-20 md:flex justify-between items-center">
           <h1
             className={`text-${theme}-solidHeading text-3xl font-bold font-['Poppins'] leading-tight pl-5 pr-5 mb-2 text-center`}
           >
