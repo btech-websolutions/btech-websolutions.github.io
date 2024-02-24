@@ -11,7 +11,7 @@ module.exports = {
       colors: {
         dark: {
           solidHeading: "#CCCCCC",
-          p: "#A7A7A7",
+          p: "#fff",
           bg: "#191919",
           icons: "#A7A7A7",
           menubg: "#363636",

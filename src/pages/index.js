@@ -1,5 +1,3 @@
-import { useContext } from "react";
-import AppContext from "@/contexts/appContext";
 import Image from "next/image";
 import Header from "@/components/Header";
 import profilePhoto from "../../public/assets/header/profilePhoto.png";
@@ -17,16 +15,13 @@ import tailwindIcon from "../../public/assets/tailwindIcon.svg";
 import vscodeIcon from "../../public/assets/vscodeIcon.svg";
 
 export default function Home() {
-  const { theme } = useContext(AppContext);
   return (
-    <main className={`max-w-[1600px] mx-auto bg-${theme}-bg`}>
+    <main className="max-w-[1600px] mx-auto bg-dark-bg">
       <Header />
-      <div className={`justify-between items-center md:p-10 bg-${theme}-bg`}>
+      <div className=" justify-between items-center md:p-10 bg-dark-bg">
         {/* Presentation Section */}
         <section className="mb-20 md:flex justify-between items-center">
-          <h1
-            className={`text-${theme}-solidHeading text-[28px] font-bold font-['Poppins'] pl-5 pr-5 mb-4 leading-9 lg:text-[48px] lg:leading-tight`}
-          >
+          <h1 className="text-dark-solidHeading text-[28px] font-bold font-['Poppins'] pl-5 pr-5 mb-4 leading-9 lg:text-[48px] lg:leading-tight">
             Hi 👋, <br /> We are <br />
             <span className="text-gradient">BTech - Web Solutions</span> <br />
             We build things for web
@@ -46,15 +41,11 @@ export default function Home() {
 
         {/* Tech Stach Section */}
         <section className="flex flex-col mb-20 md:flex justify-between items-center">
-          <h1
-            className={`text-${theme}-solidHeading text-3xl font-bold font-['Poppins'] leading-tight pl-5 pr-5 mb-2 text-center`}
-          >
+          <h1 className="text-dark-solidHeading text-3xl font-bold font-['Poppins'] leading-tight pl-5 pr-5 mb-2 text-center">
             Our Tech Stack
           </h1>
 
-          <p
-            className={`text-${theme}-p text-xl font-normal font-['Poppins'] leading-tight pl-10 pr-10 mb-10 text-center`}
-          >
+          <p className="text-dark-p text-xl font-normal font-['Poppins'] leading-tight pl-10 pr-10 mb-10 text-center">
             Technologies we’ve been working with recently
           </p>
 
@@ -78,15 +69,11 @@ export default function Home() {
 
         {/* Projects Section */}
         <section className="flex flex-col pb-20 md:flex justify-between items-center">
-          <h1
-            className={`text-${theme}-solidHeading text-3xl font-bold font-['Poppins'] leading-tight pl-5 pr-5 mb-2 text-center`}
-          >
+          <h1 className="text-dark-solidHeading text-3xl font-bold font-['Poppins'] leading-tight pl-5 pr-5 mb-2 text-center">
             Projects
           </h1>
 
-          <p
-            className={`text-${theme}-p text-xl font-normal font-['Poppins'] leading-tight pl-10 pr-10 mb-10 text-center`}
-          >
+          <p className="text-dark-p text-xl font-normal font-['Poppins'] leading-tight pl-10 pr-10 mb-10 text-center">
             Things we’ve built so far
           </p>
         </section>
