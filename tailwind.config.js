@@ -16,6 +16,7 @@ module.exports = {
           icons: "#A7A7A7",
           menubg: "#363636",
           menutext: "#CCCCCC",
+          navtext: "#CCCCCC",
         },
 
         light: {
@@ -24,7 +25,8 @@ module.exports = {
           bg: "#ffffff",
           icons: "#191919",
           menubg: "#181818",
-          menutext: "#A7A7A7",
+          menutext: "#CCCCCC",
+          navtext: "#181818",
         },
       },
     },
