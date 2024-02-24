@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import Image from "next/image";
+import Header from "@/components/Header";
 import profilePhoto from "../../public/assets/header/profilePhoto.png";
 import bootstrapIcon from "../../public/assets/bootstrapIcon.svg";
 import cssIcon from "../../public/assets/cssIcon.svg";
@@ -19,7 +20,8 @@ export default function Home() {
   const { theme } = useContext(AppContext);
   return (
     <main className={`max-w-[1600px] mx-auto bg-${theme}-bg z-0`}>
-      <div className=" justify-between items-center md:p-10">
+      <Header />
+      <div className=" justify-between items-center md:p-10 pt-5">
         {/* Presentation Section */}
         <section className="mb-20 md:flex justify-between items-center">
           <h1
@@ -76,7 +78,7 @@ export default function Home() {
 
         {/* Projects Section */}
         <section
-          className={`flex flex-col mb-20 md:flex justify-between items-center`}
+          className={`flex flex-col pb-20 md:flex justify-between items-center`}
         >
           <h1
             className={`text-${theme}-solidHeading text-3xl font-bold font-['Poppins'] leading-tight pl-5 pr-5 mb-2 text-center`}

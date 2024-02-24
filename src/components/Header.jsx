@@ -15,7 +15,7 @@ export default function Header() {
 
   return (
     <header
-      className={`flex justify-between items-center pt-5 pb-5 pl-5 pr-5 sticky top-[-1px] bg-${theme}-bg z-20 mb-10 shadow-lg`}
+      className={`flex justify-between items-center pt-5 pb-5 pl-5 pr-5 sticky top-[-1px] bg-${theme}-bg z-20 pb-10 shadow-lg`}
     >
       <a href="/">
         <Image src={logo} alt="Logo" className="h-10 w-20 " />
