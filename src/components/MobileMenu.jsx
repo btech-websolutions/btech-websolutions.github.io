@@ -1,11 +1,12 @@
 import React from "react";
+import { Sun, Moon } from "lucide-react";
 import ActiveLink from "./ActiveLink";
 import closeBtn from "../../public/assets/header/closeBtn.svg";
 import Image from "next/image";
 import logo from "../../public/assets/header/logo.svg";
 // import ThemeBtn from "./ThemeBtn";
 
-const MobileMenu = ({ setIsOpen }) => {
+const MobileMenu = ({ setIsOpen, setIsDark }) => {
   return (
     <div className="md:hidden fixed top-[30px] left-2 right-2 bg-light-menubg dark:bg-dark-menubg rounded-[15px] pl-5 font-['dm sans'] font-medium text-light-menutext dark:text-dark-menutext z-20 mx-3">
       <div className="flex justify-between items-center py-4 pr-5">
@@ -27,8 +28,21 @@ const MobileMenu = ({ setIsOpen }) => {
         <ActiveLink title="Contact" href={"/contact"} />
 
         <div className="flex justify-between pr-8 items-center">
-          <span className="text-neutral-200">Theme: light</span>
-          {/* <ThemeBtn /> */}
+          <span className="text-neutral-200 flex items-center gap-2">
+            Theme:
+            <Sun
+              className="hidden dark:block h-7 w-7 text-zinc-400 hover:text-zinc-200 mt-1.5"
+              onClick={() => {
+                setIsDark((prev) => !prev);
+              }}
+            />
+            <Moon
+              className="dark:hidden h-7 w-7 text-zinc-500 hover:text-zinc-200 mt-0.5"
+              onClick={() => {
+                setIsDark((prev) => !prev);
+              }}
+            />
+          </span>
         </div>
       </div>
     </div>

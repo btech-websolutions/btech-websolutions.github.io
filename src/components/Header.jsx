@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Sun, Moon, Github, Linkedin, Menu } from "lucide-react";
 import ActiveLink from "./ActiveLink";
 import logo from "../../public/assets/header/logo.svg";
 import ghIcon from "../../public/assets/header/ghIcon.svg";
@@ -6,7 +7,7 @@ import linkedinIcon from "../../public/assets/header/linkedinIcon.svg";
 import menuIcon from "../../public/assets/header/menuIcon.svg";
 import MobileMenu from "./MobileMenu";
 
-export default function Header() {
+export default function Header({ setIsDark }) {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <header className="bg-light-bg dark:bg-dark-bg shadow-lg sticky top-0 z-20">
@@ -18,47 +19,60 @@ export default function Header() {
           className="h-16 w-16 cursor-pointer"
         />
 
-        <nav className="hidden md:flex gap-10 text-light-navtext font-[DM Sans] font-medium">
-          <ActiveLink title="Home" href={"/"} />
-          <ActiveLink title="About" href={"/#about"} />
-          <ActiveLink title="Tech Stack" href={"/#tech-stack"} />
-          <ActiveLink title="Projects" href={"/#projects"} />
-          <ActiveLink title="Contact" href={"/contact"} />
-        </nav>
+        <div className="flex gap-10">
+          {" "}
+          <nav className="hidden md:flex gap-10 text-light-navtext font-[DM Sans] font-medium">
+            <ActiveLink title="Home" href={"/"} />
+            <ActiveLink title="About" href={"/#about"} />
+            <ActiveLink title="Tech Stack" href={"/#tech-stack"} />
+            <ActiveLink title="Projects" href={"/#projects"} />
+            <ActiveLink title="Contact" href={"/contact"} />
+          </nav>
+          {/* Social icons */}
+          <div className="flex gap-8 items-center">
+            <a href="https://github.com/BTech-Web-Solutions" target="_blank">
+              <Github className="h-8 w-8 text-zinc-500 hover:text-zinc-800 dark:text-zinc-400 dark:hover:text-zinc-200 " />
+            </a>
+            <a
+              href="https://www.linkedin.com/company/btech-web-solutions/"
+              target="_blank"
+            >
+              <Linkedin
+                strokeWidth={1.8}
+                className="h-7 w-7 text-zinc-500 hover:text-zinc-800 dark:text-zinc-400 dark:hover:text-zinc-200"
+              />
+            </a>
 
-        {/* Social icons */}
-        <div className="flex gap-8">
-          <a href="https://github.com/BTech-Web-Solutions" target="_blank">
-            <img
-              src={ghIcon.src}
-              alt="GitHub"
-              className="rounded-full hover:scale-110 hover:animate-pulse"
-            />
-          </a>
-          <a
-            href="https://www.linkedin.com/company/btech-web-solutions/"
-            target="_blank"
-          >
-            <img
-              src={linkedinIcon.src}
-              alt="LinkedIn"
-              className="rounded-full hover:scale-110 hover:animate-pulse"
-            />
-          </a>
+            <div className="hidden lg:block">
+              <Sun
+                className="hidden dark:block h-7 w-7 text-zinc-400 hover:text-zinc-200"
+                onClick={() => {
+                  setIsDark((prev) => !prev);
+                }}
+              />
+              <Moon
+                className="dark:hidden h-7 w-7 text-zinc-500 hover:text-zinc-800"
+                onClick={() => {
+                  setIsDark((prev) => !prev);
+                }}
+              />
+            </div>
+          </div>
         </div>
 
         {/* Hamburger menu for mobile */}
-        <div className="md:hidden">
+        <div className="md:hidden flex">
           <button
             onClick={() => setIsOpen(!isOpen)}
             className="outline-none focus:outline-none"
           >
-            <img src={menuIcon.src} alt="Menu" className="w-8 h-8" />
+            {/* <img src={menuIcon.src} alt="Menu" className="w-8 h-8" /> */}
+            <Menu className="w-10 h-10 text-zinc-500 hover:text-zinc-800 dark:text-zinc-400 dark:hover:text-zinc-200" />
           </button>
         </div>
 
         {/* Mobile menu */}
-        {isOpen && <MobileMenu setIsOpen={setIsOpen} />}
+        {isOpen && <MobileMenu setIsDark={setIsDark} setIsOpen={setIsOpen} />}
       </div>
     </header>
   );

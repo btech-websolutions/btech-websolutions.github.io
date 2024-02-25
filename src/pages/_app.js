@@ -6,7 +6,7 @@ export default function App({ Component, pageProps }) {
   const [isDark, setIsDark] = useState(true);
   return (
     <div className={isDark ? "dark" : ""}>
-      <Header />
+      <Header setIsDark={setIsDark} />
       <Component {...pageProps} />
     </div>
   );
