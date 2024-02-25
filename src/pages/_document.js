@@ -6,6 +6,10 @@ export default function Document() {
       <Head>
         <link href="https://fonts.cdnfonts.com/css/dm-sans" rel="stylesheet" />
         <link href="https://fonts.cdnfonts.com/css/poppins" rel="stylesheet" />
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/gh/cdgco/techfont@master/dist/techFontColor.css"
+        />
       </Head>
       <body>
         <Main />
