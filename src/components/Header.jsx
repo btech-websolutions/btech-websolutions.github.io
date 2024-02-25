@@ -11,12 +11,12 @@ export default function Header({ setIsDark }) {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <header className="bg-light-bg dark:bg-dark-bg shadow-lg sticky top-0 z-20">
-      <div className="container mx-auto flex justify-between items-center p-8">
+      <div className="container mx-auto flex justify-between items-center py-2 px-8">
         <img
           src={logo.src}
           alt="Logo"
           onClick={() => (window.location.href = "/")}
-          className="h-16 w-16 cursor-pointer"
+          className="h-16 w-16 lg:h-24 lg:w-24 cursor-pointer"
         />
 
         <div className="flex gap-10">
@@ -45,13 +45,13 @@ export default function Header({ setIsDark }) {
 
             <div className="hidden lg:block">
               <Sun
-                className="hidden dark:block h-7 w-7 text-zinc-400 hover:text-zinc-200"
+                className="hidden dark:block h-7 w-7 text-white hover:text-zinc-400"
                 onClick={() => {
                   setIsDark((prev) => !prev);
                 }}
               />
               <Moon
-                className="dark:hidden h-7 w-7 text-zinc-500 hover:text-zinc-800"
+                className="dark:hidden h-7 w-7 text-zinc-950 hover:text-zinc-500"
                 onClick={() => {
                   setIsDark((prev) => !prev);
                 }}
