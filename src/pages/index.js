@@ -55,9 +55,9 @@ export default function Home() {
             <Image src={cssIcon} alt="CSS" />
             <Image src={jsIcon} alt="JavaScript" />
             <Image src={reactIcon} alt="React" />
-            <i className="tf tf-nextjs text-zinc-800 dark:text-zinc-200 text-[90px] text-center tech-stack__icon" />
+            <i className="tf tf-nextjs text-zinc-800 dark:text-zinc-200 text-[100px] text-center tech-stack__icon" />
             <i className="tf tf-nodejs-b text-[#529F41] text-[80px] text-center tech-stack__icon" />
-            <i className="tf tf-mysql-b text-[#04546C] text-[80px] text-center tech-stack__icon" />
+            <i className="tf tf-mysql text-[#04546C] text-[100px] text-center tech-stack__icon" />
             <Image src={tailwindIcon} alt="Tailwind" />
             <i className="tf tf-mongodb-b text-[#529F41] text-[80px] text-center tech-stack__icon" />
             <Image src={vscodeIcon} alt="VSCode" />
