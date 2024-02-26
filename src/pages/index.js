@@ -55,13 +55,13 @@ export default function Home() {
             <Image src={cssIcon} alt="CSS" />
             <Image src={jsIcon} alt="JavaScript" />
             <Image src={reactIcon} alt="React" />
-            <Image src={nextjsIcon} alt="Next.js" />
+            <i className="tf tf-nextjs text-zinc-800 dark:text-zinc-200 text-[90px] text-center" />
             <Image src={reduxIcon} alt="Redux" />
             <Image src={sassIcon} alt="Sass" />
             <Image src={tailwindIcon} alt="Tailwind" />
             <Image src={bootstrapIcon} alt="Bootstrap" />
             <Image src={vscodeIcon} alt="VSCode" />
-            <Image src={githubIcon} alt="GitHub" />
+            <i className="tf tf-github text-zinc-800 dark:text-zinc-200 text-[80px] text-center" />
             <Image src={gitIcon} alt="Git" />
           </div>
         </div>
@@ -73,7 +73,7 @@ export default function Home() {
           Our Tech Stack
         </h1>
 
-        <p className="text-light-p dark:text-dark-p text-xl font-normal font-['Poppins'] leading-tight pl-10 pr-10 mb-10 text-center">
+        <p className="text-light-p dark:text-dark-p text-xl font-normal font-['Poppins'] leading-tight pl-10 pr-10 pb-10 text-center">
           Technologies we’ve been working with recently
         </p>
       </section>

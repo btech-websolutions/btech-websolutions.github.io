@@ -1,10 +1,8 @@
 import { useState } from "react";
 import { Sun, Moon, Github, Linkedin, Menu } from "lucide-react";
+
 import ActiveLink from "./ActiveLink";
 import logo from "../../public/assets/header/logo.svg";
-import ghIcon from "../../public/assets/header/ghIcon.svg";
-import linkedinIcon from "../../public/assets/header/linkedinIcon.svg";
-import menuIcon from "../../public/assets/header/menuIcon.svg";
 import MobileMenu from "./MobileMenu";
 
 export default function Header({ setIsDark }) {

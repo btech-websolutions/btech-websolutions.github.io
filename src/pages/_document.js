@@ -8,7 +8,7 @@ export default function Document() {
         <link href="https://fonts.cdnfonts.com/css/poppins" rel="stylesheet" />
         <link
           rel="stylesheet"
-          href="https://cdn.jsdelivr.net/gh/cdgco/techfont@master/dist/techFontColor.css"
+          href="https://cdn.jsdelivr.net/gh/cdgco/techfont@master/dist/techFont.css"
         />
       </Head>
       <body>
