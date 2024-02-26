@@ -1,30 +1,25 @@
 import Image from "next/image";
-import Layout from "../components/Layout";
 import profilePhoto from "../../public/assets/header/profilePhoto.png";
-
-import bootstrapIcon from "../../public/assets/bootstrapIcon.svg";
 import cssIcon from "../../public/assets/cssIcon.svg";
-import githubIcon from "../../public/assets/githubIcon.svg";
 import gitIcon from "../../public/assets/gitIcon.svg";
 import htmlIcon from "../../public/assets/htmlIcon.svg";
 import jsIcon from "../../public/assets/jsIcon.svg";
-import nextjsIcon from "../../public/assets/nextjsIcon.svg";
 import reactIcon from "../../public/assets/reactIcon.svg";
-import reduxIcon from "../../public/assets/reduxIcon.svg";
-import sassIcon from "../../public/assets/sassIcon.svg";
 import tailwindIcon from "../../public/assets/tailwindIcon.svg";
 import vscodeIcon from "../../public/assets/vscodeIcon.svg";
-import { useState } from "react";
+import "../lib/i18n";
+import { useTranslation } from "react-i18next";
 
 export default function Home() {
+  const { t } = useTranslation();
   return (
-    <div className="justify-between items-center md:p-10 bg-light-bg dark:bg-dark-bg">
+    <div className="justify-between items-center md:p-10 bg-light-bg dark:bg-dark-bg transition-all duration-500 ease-in-out">
       {/* Presentation Section */}
       <section className="mb-20 md:flex justify-between items-center pt-8 xl:container xl:mx-auto lg:px-36">
         <h1 className="text-light-solidHeading dark:text-dark-solidHeading text-[28px] font-bold font-['Poppins'] pl-5 pr-5 mb-4 leading-9 lg:text-[48px] lg:leading-tight">
-          Hi 👋, <br /> We are <br />
-          <span className="text-gradient">BTech - Web Solutions</span> <br />
-          We build things for web
+          {t("hi")} <br /> {t("who")} <br />
+          <span className="text-gradient">{t("company")}</span> <br />
+          {t("desc")}
         </h1>
 
         {/* Profile Image */}
@@ -42,11 +37,11 @@ export default function Home() {
       {/* Tech Stach Section */}
       <section className="pb-20">
         <h1 className="text-light-solidHeading dark:text-dark-solidHeading text-3xl font-bold font-['Poppins'] leading-tight pl-5 pr-5 mb-2 text-center">
-          Our Tech Stack
+          {t("techTitle")}
         </h1>
 
         <p className="text-light-p dark:text-dark-p text-xl font-normal font-['Poppins'] leading-tight pl-10 pr-10 mb-10 text-center">
-          Technologies we’ve been working with recently
+          {t("techDesc")}
         </p>
 
         <div className="flex justify-center">
@@ -70,11 +65,11 @@ export default function Home() {
       {/* Tech Stach Section */}
       <section>
         <h1 className="text-light-solidHeading dark:text-dark-solidHeading text-3xl font-bold font-['Poppins'] leading-tight pl-5 pr-5 mb-2 text-center">
-          Our Tech Stack
+          {t("projectsTitle")}
         </h1>
 
         <p className="text-light-p dark:text-dark-p text-xl font-normal font-['Poppins'] leading-tight pl-10 pr-10 pb-10 text-center">
-          Technologies we’ve been working with recently
+          {t("projectsDesc")}
         </p>
       </section>
     </div>

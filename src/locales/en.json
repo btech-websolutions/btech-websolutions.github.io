@@ -1,0 +1,20 @@
+{
+  "translation": {
+    "nav": {
+      "home": "Home",
+      "about": "About",
+      "techStack": "Tech Stack",
+      "projects": "Projects",
+      "contact": "Contact",
+      "theme": "Theme:"
+    },
+    "hi": "Hi 👋,",
+    "who": "We are",
+    "company": "Btech - Web Solutions",
+    "desc": "We build things for web",
+    "techTitle": "Our Tech Stack",
+    "techDesc": "Technologies we’ve been working with recently",
+    "projectsTitle": "Projects",
+    "projectsDesc": "Projects we’ve built so far"
+  }
+}

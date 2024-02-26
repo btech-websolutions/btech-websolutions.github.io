@@ -1,0 +1,20 @@
+{
+  "translation": {
+    "nav": {
+      "home": "Início",
+      "about": "Sobre",
+      "techStack": "Tecnologias",
+      "projects": "Projetos",
+      "contact": "Contato",
+      "theme": "Tema:"
+    },
+    "hi": "Olá 👋,",
+    "who": "Nós somos a",
+    "company": "Btech - Web Solutions",
+    "desc": "Constuímos soluções web",
+    "techTitle": "Nossa Tecnologia",
+    "techDesc": "Tecnologias que utilizamos para construir soluções",
+    "projectsTitle": "Projetos",
+    "projectsDesc": "Projetos que constuímos ao longo do tempo"
+  }
+}

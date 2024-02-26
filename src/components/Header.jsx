@@ -4,11 +4,15 @@ import { Sun, Moon, Menu } from "lucide-react";
 import ActiveLink from "./ActiveLink";
 import logo from "../../public/assets/header/logo.svg";
 import MobileMenu from "./MobileMenu";
+import "../lib/i18n";
+import { useTranslation } from "react-i18next";
+import LangBtn from "./LangBtn";
 
-export default function Header({ setIsDark }) {
+export default function Header({ setIsDark, country }) {
+  const { t } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <header className="bg-light-bg dark:bg-dark-bg shadow-lg sticky top-0 z-20">
+    <header className="bg-light-bg dark:bg-dark-bg shadow-lg sticky top-0 z-20 transition-all duration-500 ease-in-out">
       <div className="container mx-auto flex justify-between items-center py-2 px-8">
         <img
           src={logo.src}
@@ -17,17 +21,17 @@ export default function Header({ setIsDark }) {
           className="h-16 w-16 lg:h-24 lg:w-24 cursor-pointer"
         />
 
-        <div className="flex gap-10">
+        <div className="flex gap-10 md:gap-5 items-center">
           {" "}
           <nav className="hidden md:flex gap-10 text-light-navtext font-[DM Sans] font-medium">
-            <ActiveLink title="Home" href={"/"} />
-            <ActiveLink title="About" href={"/#about"} />
-            <ActiveLink title="Tech Stack" href={"/#tech-stack"} />
-            <ActiveLink title="Projects" href={"/#projects"} />
-            <ActiveLink title="Contact" href={"/contact"} />
+            <ActiveLink title={t("nav.home")} href={"/"} />
+            <ActiveLink title={t("nav.about")} href={"/#about"} />
+            <ActiveLink title={t("nav.techStack")} href={"/#tech-stack"} />
+            <ActiveLink title={t("nav.projects")} href={"/#projects"} />
+            <ActiveLink title={t("nav.contact")} href={"/contact"} />
           </nav>
           {/* Social icons */}
-          <div className="flex gap-8 items-center">
+          <div className="flex gap-8 md:gap-4 items-center">
             <a href="https://github.com/BTech-Web-Solutions" target="_blank">
               <i className="tf tf-github text-zinc-800 dark:text-zinc-200 text-[40px] text-center tech-stack__icon flex" />
             </a>
@@ -37,6 +41,8 @@ export default function Header({ setIsDark }) {
             >
               <i className="fa-brands fa-linkedin  text-zinc-800 dark:text-zinc-200 text-[30px] text-center tech-stack__icon flex mt-1" />
             </a>
+
+            <LangBtn country={country} />
 
             <div className="hidden lg:block">
               <Sun
