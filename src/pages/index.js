@@ -55,13 +55,13 @@ export default function Home() {
             <Image src={cssIcon} alt="CSS" />
             <Image src={jsIcon} alt="JavaScript" />
             <Image src={reactIcon} alt="React" />
-            <i className="tf tf-nextjs text-zinc-800 dark:text-zinc-200 text-[90px] text-center" />
+            <i className="tf tf-nextjs text-zinc-800 dark:text-zinc-200 text-[90px] text-center tech-stack__icon" />
             <Image src={reduxIcon} alt="Redux" />
             <Image src={sassIcon} alt="Sass" />
             <Image src={tailwindIcon} alt="Tailwind" />
             <Image src={bootstrapIcon} alt="Bootstrap" />
             <Image src={vscodeIcon} alt="VSCode" />
-            <i className="tf tf-github text-zinc-800 dark:text-zinc-200 text-[80px] text-center" />
+            <i className="tf tf-github text-zinc-800 dark:text-zinc-200 text-[80px] text-center tech-stack__icon" />
             <Image src={gitIcon} alt="Git" />
           </div>
         </div>

@@ -19,6 +19,30 @@ body {
   margin-right: 20px;
 }
 
+.tech-stack__icons img {
+  transition: transform 0.5s;
+}
+
+.tech-stack__icons img:hover {
+  transform: scale(1.1);
+}
+
+.tech-stack__icons img:not(:hover) {
+  transform: scale(1);
+}
+
+.tech-stack__icon {
+  transition: transform 0.5s;
+}
+
+.tech-stack__icon:hover {
+  transform: scale(1.1);
+}
+
+.tech-stack__icon:not(:hover) {
+  transform: scale(1);
+}
+
 .social-icon img {
   transition: transform 0.5s;
 }
@@ -29,20 +53,6 @@ body {
 
 .social-icon img:not(:hover) {
   transform: scale(1);
-}
-
-@media screen and (min-width: 1200px) {
-  .tech-stack__icons img {
-    transition: transform 0.5s;
-  }
-
-  .tech-stack__icons img:hover {
-    transform: scale(1.1);
-  }
-
-  .tech-stack__icons img:not(:hover) {
-    transform: scale(1);
-  }
 }
 
 ::-webkit-scrollbar {
