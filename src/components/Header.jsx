@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Sun, Moon, Github, Linkedin, Menu } from "lucide-react";
+import { Sun, Moon, Menu } from "lucide-react";
 
 import ActiveLink from "./ActiveLink";
 import logo from "../../public/assets/header/logo.svg";
@@ -29,16 +29,13 @@ export default function Header({ setIsDark }) {
           {/* Social icons */}
           <div className="flex gap-8 items-center">
             <a href="https://github.com/BTech-Web-Solutions" target="_blank">
-              <Github className="h-8 w-8 text-zinc-500 hover:text-zinc-800 dark:text-zinc-400 dark:hover:text-zinc-200 " />
+              <i className="tf tf-github text-zinc-800 dark:text-zinc-200 text-[40px] text-center tech-stack__icon flex" />
             </a>
             <a
               href="https://www.linkedin.com/company/btech-web-solutions/"
               target="_blank"
             >
-              <Linkedin
-                strokeWidth={1.8}
-                className="h-7 w-7 text-zinc-500 hover:text-zinc-800 dark:text-zinc-400 dark:hover:text-zinc-200"
-              />
+              <i className="fa-brands fa-linkedin  text-zinc-800 dark:text-zinc-200 text-[30px] text-center tech-stack__icon flex mt-1" />
             </a>
 
             <div className="hidden lg:block">
