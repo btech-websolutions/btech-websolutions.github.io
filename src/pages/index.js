@@ -56,10 +56,10 @@ export default function Home() {
             <Image src={jsIcon} alt="JavaScript" />
             <Image src={reactIcon} alt="React" />
             <i className="tf tf-nextjs text-zinc-800 dark:text-zinc-200 text-[90px] text-center tech-stack__icon" />
-            <Image src={reduxIcon} alt="Redux" />
-            <Image src={sassIcon} alt="Sass" />
+            <i className="tf tf-nodejs-b text-[#529F41] text-[80px] text-center tech-stack__icon" />
+            <i className="tf tf-mysql-b text-[#04546C] text-[80px] text-center tech-stack__icon" />
             <Image src={tailwindIcon} alt="Tailwind" />
-            <Image src={bootstrapIcon} alt="Bootstrap" />
+            <i className="tf tf-mongodb-b text-[#529F41] text-[80px] text-center tech-stack__icon" />
             <Image src={vscodeIcon} alt="VSCode" />
             <i className="tf tf-github text-zinc-800 dark:text-zinc-200 text-[80px] text-center tech-stack__icon" />
             <Image src={gitIcon} alt="Git" />
