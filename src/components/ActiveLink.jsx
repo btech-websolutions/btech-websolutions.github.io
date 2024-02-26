@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 
 const ActiveLink = ({ href, title }) => {
   const router = useRouter();
-  const [isActive, setIsActive] = useState(false);
+  const [isActive, setIsActive] = useState(router.pathname === href);
 
   const handleClick = (e) => {
     e.preventDefault();
@@ -44,7 +44,11 @@ const ActiveLink = ({ href, title }) => {
       <a
         href={href}
         onClick={handleClick}
-        className={`text-zinc-500 hover:text-zinc-200 dark:text-zinc-400 dark:hover:text-zinc-200 ${isActive ? "text-zinc-100 dark:text-zinc-100" : ""}`}
+        className={
+          isActive
+            ? "active text-zinc-100"
+            : "text-zinc-400 hover:text-zinc-200 dark:text-zinc-500 dark:hover:text-zinc-200"
+        }
       >
         {title}
       </a>
