@@ -47,7 +47,7 @@ const ActiveLink = ({ href, title }) => {
         className={
           isActive
             ? "active text-zinc-100 md:text-zinc-800 dark:md:text-zinc-100"
-            : "text-zinc-400 hover:text-zinc-800 dark:text-zinc-500 dark:hover:text-zinc-200"
+            : "text-zinc-500 hover:text-zinc-200 md:hover:text-zinc-800 dark:md:hover:text-zinc-100"
         }
       >
         {title}
