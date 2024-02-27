@@ -1,10 +1,13 @@
 import "@/styles/globals.css";
 import Layout from "@/components/Layout";
+import LangProvider from "@/contexts/LangProvider";
 
 export default function App({ Component, pageProps }) {
   return (
-    <Layout>
-      <Component {...pageProps} />
-    </Layout>
+    <LangProvider>
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+    </LangProvider>
   );
 }
