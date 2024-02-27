@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 
-const ActiveLink = ({ href, title }) => {
+const ActiveLink = ({ href, title, className }) => {
   const router = useRouter();
   const [isActive, setIsActive] = useState(router.pathname === href);
 
@@ -46,8 +46,8 @@ const ActiveLink = ({ href, title }) => {
         onClick={handleClick}
         className={
           isActive
-            ? "active text-zinc-100 md:text-zinc-800 dark:md:text-zinc-100"
-            : "text-zinc-500 hover:text-zinc-200 md:hover:text-zinc-800 dark:md:hover:text-zinc-100"
+            ? `${className} active text-zinc-100 md:text-zinc-800 dark:md:text-zinc-100`
+            : `${className} text-zinc-500 hover:text-zinc-200 md:hover:text-zinc-800 dark:md:hover:text-zinc-100`
         }
       >
         {title}
