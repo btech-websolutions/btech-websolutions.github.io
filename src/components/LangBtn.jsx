@@ -14,8 +14,10 @@ const LangBtn = () => {
         return "br";
       case "es":
         return "es";
-      default:
-        return "br";
+      case "cn":
+        return "cn";
+      case "rs":
+        return "rs";
     }
   };
 
@@ -47,7 +49,7 @@ const LangBtn = () => {
         }}
       />
 
-      {/* Options com animação */}
+      {/* Options */}
       <div
         className={`absolute flex flex-col gap-2 mt-2 ${showOptions ? "opacity-100 translate-y-0" : "opacity-0 translate-y-[-10px]"} transition-all duration-700 ease-in-out z-10`}
         style={{ top: "100%" }}
@@ -87,6 +89,32 @@ const LangBtn = () => {
           }}
           onClick={() => {
             setLang("es");
+          }}
+        />
+
+        <div
+          className={`${currentLang() === "cn" ? "hidden" : ""} h-9 w-9 rounded-full border-2 border-zinc-700 dark:border-2 dark:border-zinc-200 cursor-pointer hover:scale-110 transition-all duration-700 ease-in-out`}
+          style={{
+            backgroundImage: `url(https://flagcdn.com/w160/cn.png)`,
+            backgroundPosition: "center",
+            backgroundSize: "cover",
+            backgroundRepeat: "no-repeat",
+          }}
+          onClick={() => {
+            setLang("cn");
+          }}
+        />
+
+        <div
+          className={`${currentLang() === "rs" ? "hidden" : ""} h-9 w-9 rounded-full border-2 border-zinc-700 dark:border-2 dark:border-zinc-200 cursor-pointer hover:scale-110 transition-all duration-700 ease-in-out`}
+          style={{
+            backgroundImage: `url(https://flagcdn.com/w160/rs.png)`,
+            backgroundPosition: "center",
+            backgroundSize: "cover",
+            backgroundRepeat: "no-repeat",
+          }}
+          onClick={() => {
+            setLang("rs");
           }}
         />
       </div>
