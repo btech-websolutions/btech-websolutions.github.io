@@ -13,13 +13,16 @@ export default function Footer() {
           <img src={logo.src} alt="Logo" className="h-24 w-24 ml-[-5px]" />
           <div>
             <div className="md:flex gap-10">
-              <div className="flex items-center">
-                <i className="fa-brands fa-whatsapp text-2xl" />
-                <h1 className="ml-2">+55 22 9 8155-6221</h1>
-              </div>
+              <a href="https://wa.me/5522981556221" target="_blank">
+                <div className="flex items-center hover:text-zinc-400 dark:hover:text-zinc-200 cursor-pointer">
+                  <i className="fa-brands fa-whatsapp text-2xl" />
+                  <h1 className="ml-2">+55 22 9 8155-6221</h1>
+                </div>
+              </a>
+
               <div className="flex items-center">
                 <i className="fa-solid fa-envelope text-2xl" />
-                <h1 className="ml-2">btech-websolutions@gmail.com</h1>
+                <h1 className="ml-2 ">btech-websolutions@gmail.com</h1>
               </div>
             </div>
           </div>

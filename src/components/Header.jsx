@@ -8,7 +8,7 @@ import "../lib/i18n";
 import { useTranslation } from "react-i18next";
 import LangBtn from "./LangBtn";
 
-export default function Header({ setIsDark, country }) {
+export default function Header({ setIsDark }) {
   const { t } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
   return (
@@ -42,7 +42,7 @@ export default function Header({ setIsDark, country }) {
               <i className="fa-brands fa-linkedin  text-zinc-800 dark:text-zinc-200 text-[30px] text-center tech-stack__icon flex mt-1" />
             </a>
 
-            <LangBtn country={country} />
+            <LangBtn />
 
             <div className="hidden lg:block">
               <Sun
