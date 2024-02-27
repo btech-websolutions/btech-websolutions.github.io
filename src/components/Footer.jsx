@@ -61,7 +61,7 @@ export default function Footer() {
 
       <section className="lg:hidden font-medium flex justify-center items-center mt-5 bg-[#d1d1d1cc] dark:bg-[#000000cc] w-[100vw] h-6 fixed bottom-0 left-0">
         <p className="text-zinc-950 dark:text-zinc-400 text-[14px]">
-          &copy; 2024 BTech - Web Solutions
+          &copy; {new Date().getFullYear()} {t("company")}
         </p>
       </section>
     </footer>
