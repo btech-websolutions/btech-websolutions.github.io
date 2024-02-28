@@ -3,7 +3,7 @@ import { Link } from "lucide-react";
 
 const Project = ({ title, desc, techStack, liveLink, codeLink }) => {
   return (
-    <div className="md:w-[375px] mb-10 font-[poppins] flex flex-col rounded-3xl overflow-hidden shadow-2xl shadow-neutral-400 dark:shadow-neutral-900 ">
+    <div className="md:w-[375px] mx-8 lg:mx-0 mb-10 font-[poppins] flex flex-col rounded-3xl overflow-hidden shadow-2xl shadow-neutral-400 dark:shadow-neutral-900 ">
       <div
         style={{
           backgroundImage: `url("https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg?w=1380&t=st=1709075919~exp=1709076519~hmac=c9d9fbbb34005e544cd147f04e8518448d54f3fb4bb950bd51d2abf1fffc902c")`,
