@@ -7,6 +7,7 @@ import jsIcon from "../../public/assets/jsIcon.svg";
 import reactIcon from "../../public/assets/reactIcon.svg";
 import tailwindIcon from "../../public/assets/tailwindIcon.svg";
 import vscodeIcon from "../../public/assets/vscodeIcon.svg";
+import rmCover from "../../public/assets/projects/rmCover.png";
 import "../lib/i18n";
 import { useTranslation } from "react-i18next";
 import Project from "@/components/Project";
@@ -96,12 +97,23 @@ export default function Home() {
         </p>
 
         <div className="lg:grid lg:grid-cols-3 lg:gap-8">
-          <Project />
-          <Project />
-          <Project />
-          <Project />
-          <Project />
-          <Project />
+          <Project
+            title="Hotel Pousada Bambuzal"
+            desc="Um site de hotel criado para um cliente no Brasil. O objetivo do site é mostrar as comodidades e serviços do hotel."
+            techStack="NextJs, Material UI, Bootstrap, NodeJs, MySQL"
+            liveLink="https://www.hotelpousadabambuzal.com/"
+            codeLink="https://github.com/BTech-Web-Solutions/Hotel-Pousada-Bambuzal"
+            coverLink="https://media.githubusercontent.com/media/BTech-Web-Solutions/Hotel-Pousada-Bambuzal/main/src/images/Carrossel/1.png"
+          />
+
+          <Project
+            title="Route Map"
+            desc="Um aplicativo para calcular o gasto de combustível e pedágio em viagens de carro. O aplicativo também mostra a rota no mapa."
+            techStack="React Native, Expo, Styled Components"
+            liveLink="#"
+            codeLink="https://github.com/brodrigues0ll/Route-Map"
+            coverLink={rmCover.src}
+          />
         </div>
       </section>
     </div>
