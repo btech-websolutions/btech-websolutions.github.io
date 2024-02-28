@@ -23,7 +23,7 @@
         "techStack": "NextJs, Material UI, Bootstrap, NodeJs, MySQL"
       },
       "rm": {
-        "title": "Route Map",
+        "title": "Mapa de Ruta",
         "desc": "Una aplicación para calcular el gasto de combustible y peajes en viajes en automóvil. La aplicación también muestra la ruta en el mapa.",
         "techStack": "React Native, Expo, Google Maps API, Firebase, Styled Components"
       }
