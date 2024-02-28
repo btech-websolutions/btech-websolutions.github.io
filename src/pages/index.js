@@ -9,6 +9,7 @@ import tailwindIcon from "../../public/assets/tailwindIcon.svg";
 import vscodeIcon from "../../public/assets/vscodeIcon.svg";
 import "../lib/i18n";
 import { useTranslation } from "react-i18next";
+import Project from "@/components/Project";
 
 export default function Home() {
   const { t } = useTranslation();
@@ -62,8 +63,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Tech Stach Section */}
-      <section>
+      {/* Projects Section */}
+      <section className="flex flex-col items-center">
         <h1 className="text-light-solidHeading dark:text-dark-solidHeading text-3xl font-bold font-['Poppins'] leading-tight pl-5 pr-5 mb-2 text-center">
           {t("projectsTitle")}
         </h1>
@@ -71,6 +72,15 @@ export default function Home() {
         <p className="text-light-p dark:text-dark-p text-xl font-normal font-['Poppins'] leading-tight pl-10 pr-10 pb-10 text-center">
           {t("projectsDesc")}
         </p>
+
+        <div className="md:grid md:grid-cols-3">
+          <Project />
+          <Project />
+          <Project />
+          <Project />
+          <Project />
+          <Project />
+        </div>
       </section>
     </div>
   );
