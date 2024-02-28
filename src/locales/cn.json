@@ -15,6 +15,18 @@
     "techTitle": "我们的技术栈",
     "techDesc": "我们最近使用的技术",
     "projectsTitle": "项目",
-    "projectsDesc": "我们迄今为止完成的项目"
+    "projectsDesc": "我们迄今为止完成的项目",
+    "projects": {
+      "hpb": {
+        "title": "Hotel Pousada Bambuzal",
+        "desc": "一个为巴西客户创建的酒店网站。该网站的目的是展示酒店的设施和服务。",
+        "techStack": "NextJs, Material UI, Bootstrap, NodeJs, MySQL"
+      },
+      "rm": {
+        "title": "Route Map",
+        "desc": "一款用于计算汽车旅行中燃油和过路费的应用程序。该应用程序还在地图上显示路线。",
+        "techStack": "React Native, Expo, Google Maps API, Firebase, Styled Components"
+      }
+    }
   }
 }

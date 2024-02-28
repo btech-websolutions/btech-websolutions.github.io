@@ -98,18 +98,18 @@ export default function Home() {
 
         <div className="lg:grid lg:grid-cols-3 lg:gap-8">
           <Project
-            title="Hotel Pousada Bambuzal"
-            desc="Um site de hotel criado para um cliente no Brasil. O objetivo do site é mostrar as comodidades e serviços do hotel."
-            techStack="NextJs, Material UI, Bootstrap, NodeJs, MySQL"
+            title={t("projects.hpb.title")}
+            desc={t("projects.hpb.desc")}
+            techStack={t("projects.hpb.techStack")}
             liveLink="https://www.hotelpousadabambuzal.com/"
             codeLink="https://github.com/BTech-Web-Solutions/Hotel-Pousada-Bambuzal"
             coverLink="https://media.githubusercontent.com/media/BTech-Web-Solutions/Hotel-Pousada-Bambuzal/main/src/images/Carrossel/1.png"
           />
 
           <Project
-            title="Route Map"
-            desc="Um aplicativo para calcular o gasto de combustível e pedágio em viagens de carro. O aplicativo também mostra a rota no mapa."
-            techStack="React Native, Expo, Styled Components"
+            title={t("projects.rm.title")}
+            desc={t("projects.rm.desc")}
+            techStack={t("projects.rm.techStack")}
             liveLink="#"
             codeLink="https://github.com/brodrigues0ll/Route-Map"
             coverLink={rmCover.src}

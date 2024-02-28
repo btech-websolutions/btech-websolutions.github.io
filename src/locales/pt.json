@@ -15,6 +15,18 @@
     "techTitle": "Nossa Tecnologia",
     "techDesc": "Tecnologias que utilizamos para construir soluções",
     "projectsTitle": "Projetos",
-    "projectsDesc": "Projetos que constuímos ao longo do tempo"
+    "projectsDesc": "Projetos que constuímos ao longo do tempo",
+    "projects": {
+      "hpb": {
+        "title": "Hotel Pousada Bambuzal",
+        "desc": "Um site de hotel criado para um cliente no Brasil. O objetivo do site é mostrar as comodidades e serviços do hotel.",
+        "techStack": "NextJs, Material UI, Bootstrap, NodeJs, MySQL"
+      },
+      "rm": {
+        "title": "Route Map",
+        "desc": "Um aplicativo para calcular o gasto de combustível e pedágio em viagens de carro. O aplicativo também mostra a rota no mapa.",
+        "techStack": "React Native, Expo, Google Maps API, Firebase, Styled Components"
+      }
+    }
   }
 }

@@ -15,6 +15,18 @@
     "techTitle": "Our Tech Stack",
     "techDesc": "Technologies we’ve been working with recently",
     "projectsTitle": "Projects",
-    "projectsDesc": "Projects we’ve built so far"
+    "projectsDesc": "Projects we’ve built so far",
+    "projects": {
+      "hpb": {
+        "title": "Hotel Pousada Bambuzal",
+        "desc": "A hotel website created for a client in Brazil. The goal of the website is to showcase the amenities and services of the hotel.",
+        "techStack": "NextJs, Material UI, Bootstrap, NodeJs, MySQL"
+      },
+      "rm": {
+        "title": "Route Map",
+        "desc": "An application to calculate fuel and toll expenses for car trips. The application also shows the route on the map.",
+        "techStack": "React Native, Expo, Google Maps API, Firebase, Styled Components"
+      }
+    }
   }
 }
