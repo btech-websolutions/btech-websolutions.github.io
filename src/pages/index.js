@@ -73,7 +73,7 @@ export default function Home() {
           {t("projectsDesc")}
         </p>
 
-        <div className="md:grid md:grid-cols-3">
+        <div className="lg:grid lg:grid-cols-3">
           <Project />
           <Project />
           <Project />
