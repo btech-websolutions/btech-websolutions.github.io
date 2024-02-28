@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "lucide-react";
 
-const Project = ({ title, desc, techStack }) => {
+const Project = ({ title, desc, techStack, liveLink, codeLink }) => {
   return (
     <div className="md:w-[385px] mx-6 mb-10 font-[poppins] flex flex-col rounded-3xl overflow-hidden shadow-2xl shadow-neutral-400 dark:shadow-neutral-900 ">
       <div
@@ -29,17 +29,20 @@ const Project = ({ title, desc, techStack }) => {
           </span>
         </p>
 
-        <section className="flex justify-between dark:text-white">
-          <div className="flex items-center gap-2 hover:text-zinc-400 dark:hover:text-zinc-400">
-            <Link className=" text-4xl text-center" />
-            <u>Live Preview</u>
-          </div>
+        <section className="flex justify-between dark:text-white items-center">
+          <a href="https://www.github.com/" target="_blank">
+            <div className="flex items-center gap-2 hover:text-zinc-400 dark:hover:text-zinc-400">
+              <Link className=" text-4xl text-center" />
+              <u>Live Preview</u>
+            </div>
+          </a>
 
-          <div className="flex items-center gap-2 hover:text-zinc-400 dark:hover:text-zinc-400">
-            <i className="tf tf-github text-4xl text-center" />
-
-            <u>View Code</u>
-          </div>
+          <a href="https://www.github.com/" target="_blank">
+            <div className="flex items-center gap-2 hover:text-zinc-400 dark:hover:text-zinc-400">
+              <i className="tf tf-github text-4xl text-center" />
+              <u>View Code</u>
+            </div>
+          </a>
         </section>
       </div>
     </div>
