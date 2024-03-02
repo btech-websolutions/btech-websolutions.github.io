@@ -26,6 +26,11 @@
         "title": "Route Map",
         "desc": "Um aplicativo para calcular o gasto de combustível e pedágio em viagens de carro. O aplicativo também mostra a rota no mapa.",
         "techStack": "React Native, Expo, Google Maps API, Firebase, Styled Components"
+      },
+      "lbt": {
+        "title": "Aprender Construir Ensinar",
+        "desc": "Uma comunidade internacional pública de desenvolvedores, designers e criadores que são apaixonados por aprender, construir e ensinar aos outros.",
+        "techStack": "Svelte, Tailwind CSS, GitHub API"
       }
     }
   }

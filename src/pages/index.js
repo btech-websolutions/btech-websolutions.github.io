@@ -8,6 +8,7 @@ import reactIcon from "../../public/assets/reactIcon.svg";
 import tailwindIcon from "../../public/assets/tailwindIcon.svg";
 import vscodeIcon from "../../public/assets/vscodeIcon.svg";
 import rmCover from "../../public/assets/projects/rmCover.png";
+import lbtCover from "../../public/assets/projects/lbtCover.png";
 import "../lib/i18n";
 import { useTranslation } from "react-i18next";
 import Project from "@/components/Project";
@@ -113,6 +114,15 @@ export default function Home() {
             liveLink="#"
             codeLink="https://github.com/brodrigues0ll/Route-Map"
             coverLink={rmCover.src}
+          />
+
+          <Project
+            title={t("projects.lbt.title")}
+            desc={t("projects.lbt.desc")}
+            techStack={t("projects.lbt.techStack")}
+            liveLink="https://learnbuildteach.netlify.app/"
+            codeLink="https://github.com/QZBrainon/learnbuildteach.com"
+            coverLink={lbtCover.src}
           />
         </div>
       </section>

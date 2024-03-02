@@ -26,6 +26,11 @@
         "title": "路线地图",
         "desc": "一款用于计算汽车旅行中燃油和过路费的应用程序。该应用程序还在地图上显示路线。",
         "techStack": "React Native, Expo, Google Maps API, Firebase, Styled Components"
+      },
+      "lbt": {
+        "title": "学习 构建 教授",
+        "desc": "一个国际公开的开发者、设计师和创作者社区，他们热衷于学习、构建和教授他人。",
+        "techStack": "Svelte, Tailwind CSS, GitHub API"
       }
     }
   }

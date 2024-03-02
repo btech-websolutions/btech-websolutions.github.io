@@ -26,6 +26,11 @@
         "title": "Mapa de Ruta",
         "desc": "Una aplicación para calcular el gasto de combustible y peajes en viajes en automóvil. La aplicación también muestra la ruta en el mapa.",
         "techStack": "React Native, Expo, Google Maps API, Firebase, Styled Components"
+      },
+      "lbt": {
+        "title": "Aprender Construir Enseñar",
+        "desc": "Una comunidad internacional pública de desarrolladores, diseñadores y creadores apasionados por aprender, construir y enseñar a otros.",
+        "techStack": "Svelte, Tailwind CSS, GitHub API"
       }
     }
   }

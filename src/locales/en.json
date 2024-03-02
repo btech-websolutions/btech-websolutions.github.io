@@ -26,6 +26,11 @@
         "title": "Route Map",
         "desc": "An application to calculate fuel and toll expenses for car trips. The application also shows the route on the map.",
         "techStack": "React Native, Expo, Google Maps API, Firebase, Styled Components"
+      },
+      "lbt": {
+        "title": "Learn Build Teach",
+        "desc": "An public international community of developers, designers, and creators who are passionate about learning, building, and teaching others.",
+        "techStack": "Svelte, Tailwind CSS, GitHub API"
       }
     }
   }
