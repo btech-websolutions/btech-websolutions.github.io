@@ -11,7 +11,7 @@ const Project = ({ title, desc, techStack, liveLink, codeLink, coverLink }) => {
         className="h-56 bg-cover bg-center bg-no-repeat"
       />
 
-      <div className="flex flex-col gap-5 pt-12 py-10 px-8 dark:bg-dark-menubg">
+      <div className="flex flex-col flex-grow gap-5 pt-12 py-10 px-8 dark:bg-dark-menubg">
         <h1 className="text-2xl font-medium text-zinc-500 dark:text-zinc-200">
           {title}
         </h1>
